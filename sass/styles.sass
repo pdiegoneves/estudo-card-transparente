@@ -12,8 +12,9 @@ body
     justify-content: center
     align-items: center
     min-height: 100vh
-    // background: #161623
-    background: url("../img/fundo.jpg")
+    background: url("../img/fundo.webp")
+    background-repeat: no-repeat
+    background-size: cover
 
 .container
     position: relative
@@ -62,7 +63,9 @@ body
             p
                 font-size: 1em
                 color: #fff
-                font-weight: 300px
+                font-weight: 400
+                text-align: justify
+                background-color: rgba(0,0,0,.2)
             a
                 position: relative
                 display: inline-block
@@ -74,4 +77,20 @@ body
                 border-radius: 20px
                 font-weight: 500
                 box-shadow: 0 5px 15px rgba(0,0,0,.2)
-        
+header .title
+    min-width: 70vw
+    min-height: 2em
+    background: rgba(0,0,0,.2)
+    display: flex
+    text-align: center
+    justify-content: center
+    align-items: center
+    color: #fff
+    backdrop-filter: blur(1px)
+
+.bg-card
+    position: absolute
+    top: 0
+    right: 0
+    width: 100%
+    opacity: 0.4
